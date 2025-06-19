@@ -1,1 +1,1 @@
-# Judicial_Database_Management_System
+# Judicial Database Management System

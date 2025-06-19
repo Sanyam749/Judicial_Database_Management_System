@@ -1,237 +1,315 @@
---Data Insertion Statement: 
-
--- 1) CITIZENS
-INSERT INTO citizens (citizen_id, name, address, district, state, date_of_birth, gender) VALUES
-(1,  'Rahul Sharma',   '123 MG Road, Mumbai',                 'Mumbai',        'Maharashtra',      '1980-05-15', 'Male'),
-(2,  'Priya Singh',    '45 Janpath, New Delhi',               'New Delhi',     'Delhi',            '1985-08-23', 'Female'),
-(3,  'Anil Kumar',     '78 Brigade Road, Bengaluru',          'Bengaluru',     'Karnataka',        '1978-12-05', 'Male'),
-(4,  'Sunita Patel',   '34 Anna Salai, Chennai',              'Chennai',       'Tamil Nadu',       '1990-02-14', 'Female'),
-(5,  'Rakesh Gupta',   '56 Park Street, Kolkata',             'Kolkata',       'West Bengal',      '1982-07-30', 'Male'),
-(6,  'Kavita Rao',     '90 Hazratganj, Lucknow',              'Lucknow',       'Uttar Pradesh',    '1975-11-20', 'Female'),
-(7,  'Vikram Desai',   '12 Gandhi Maidan, Patna',             'Patna',         'Bihar',            '1988-03-11', 'Male'),
-(8,  'Meera Nair',     '67 CG Road, Ahmedabad',               'Ahmedabad',     'Gujarat',          '1979-09-01', 'Female'),
-(9,  'Suresh Menon',   '101 MI Road, Jaipur',                 'Jaipur',        'Rajasthan',        '1983-10-25', 'Male'),
-(10, 'Aisha Khan',     '23 Sector 15, Chandigarh',            'Chandigarh',    'Punjab',           '1992-01-17', 'Female'),
-(11, 'Rohit Verma',    '89 MG Road, Thiruvananthapuram',      'Thiruvananthapuram','Kerala',       '1987-06-09', 'Male'),
-(12, 'Neha Joshi',     '34 Banjara Hills, Hyderabad',         'Hyderabad',     'Telangana',        '1991-04-28', 'Female'),
-(13, 'Deepak Yadav',   '77 Janpath, Bhubaneswar',             'Bhubaneswar',   'Odisha',           '1984-12-12', 'Male'),
-(14, 'Pooja Mehta',    '22 M.G. Road, Bhopal',                'Bhopal',        'Madhya Pradesh',   '1993-05-05', 'Female'),
-(15, 'Amitabh Das',    '55 Sector 14, Gurugram',              'Gurugram',      'Haryana',          '1976-08-19', 'Male'),
-(16, 'Sneha Chawla',   '18 Fontainhas, Panaji',               'Panaji',        'Goa',              '1990-12-31', 'Female'),
-(17, 'Manoj Tiwari',   '44 Mall Road, Shimla',                'Shimla',        'Himachal Pradesh', '1974-07-07', 'Male'),
-(18, 'Kavya Reddy',    '36 Mall Road, Dehradun',              'Dehradun',      'Uttarakhand',      '1995-11-02', 'Female'),
-(19, 'Arjun Patel',    '29 Lal Chowk, Srinagar',              'Srinagar',      'Jammu & Kashmir',  '1986-03-21', 'Male'),
-(20, 'Ananya Kapoor',  '101 Circular Road, Guwahati',         'Guwahati',      'Assam',            '1994-04-12', 'Female');
-
-
-INSERT INTO citizens (citizen_id, name, address, district, state, date_of_birth, gender) VALUES
-(21, 'Nikhil Sharma',    '45 Nehru Street, Mumbai',         'Mumbai',       'Maharashtra', '1981-06-11', 'Male'),
-(22, 'Sanya Kapoor',     '67 Rajpath, Delhi',               'New Delhi',    'Delhi',       '1990-03-08', 'Female'),
-(23, 'Harsh Rajput',     '12 Main Road, Jaipur',            'Jaipur',       'Rajasthan',   '1986-09-15', 'Male'),
-(24, 'Divya Das',        '88 Market Road, Lucknow',         'Lucknow',      'Uttar Pradesh','1989-10-19', 'Female'),
-(25, 'Aarav Malhotra',   '77 Link Road, Pune',              'Pune',         'Maharashtra', '1993-01-05', 'Male'),
-(26, 'Ishita Jain',      '11 College Street, Kolkata',      'Kolkata',      'West Bengal', '1992-07-12', 'Female'),
-(27, 'Rajeev Menon',     '9 Cross Street, Kochi',           'Kochi',        'Kerala',      '1984-11-23', 'Male'),
-(28, 'Tanya Iyer',       '53 Residency Road, Chennai',      'Chennai',      'Tamil Nadu',  '1996-05-18', 'Female'),
-(29, 'Rohan Bhatia',     '32 City Centre, Indore',          'Indore',       'Madhya Pradesh','1985-02-03','Male'),
-(30, 'Simran Arora',     '7 MG Road, Amritsar',             'Amritsar',     'Punjab',      '1991-06-30', 'Female'),
-(31, 'Yuvraj Singh',     '4 Lake View, Surat',              'Surat',        'Gujarat',     '1987-04-14', 'Male'),
-(32, 'Bhavna Nair',      '102 Beach Road, Vizag',           'Visakhapatnam','Andhra Pradesh','1994-08-25','Female'),
-(33, 'Sameer Khan',      '201 Cantonment, Secunderabad',   'Hyderabad',    'Telangana',   '1982-12-08', 'Male'),
-(34, 'Naina Bedi',       '77 Ridge Road, Shimla',           'Shimla',       'Himachal Pradesh','1990-02-10','Female'),
-(35, 'Gaurav Joshi',     '88 Outer Ring, Ahmedabad',        'Ahmedabad',    'Gujarat',     '1993-11-17', 'Male'),
-(36, 'Preeti Verma',     '3 Residency, Bhopal',             'Bhopal',       'Madhya Pradesh','1995-09-19','Female'),
-(37, 'Alok Ranjan',      '101 Industrial Area, Ranchi',     'Ranchi',       'Jharkhand',   '1983-01-01', 'Male'),
-(38, 'Ritika Shah',      '45 Road No. 5, Gandhinagar',      'Gandhinagar',  'Gujarat',     '1988-07-22', 'Female'),
-(39, 'Tarun Singh',      '58 Civil Lines, Kanpur',          'Kanpur',       'Uttar Pradesh','1992-12-03','Male'),
-(40, 'Ira Dubey',        '16 MG Road, Siliguri',            'Siliguri',     'West Bengal', '1996-10-10', 'Female');
-
-
--- Contact numbers (one per citizen)
-INSERT INTO citizen_contact_number (citizen_id, phone) VALUES
-(1, '9876543210'), (2, '9123456780'), (3, '9988776655'), (4, '9876501234'),
-(5, '9654321870'), (6, '9812345670'), (7, '8765432190'), (8, '9876123450'),
-(9, '9988012345'), (10,'9123498765'), (11,'9811223344'), (12,'9870012345'),
-(13,'9765432109'), (14,'9654012345'), (15,'9543210987'), (16,'9445123789'),
-(17,'9988123456'), (18,'9875632109'), (19,'9123012345'), (20,'9001234567');
-
--- Emails (one per citizen)
-INSERT INTO citizen_email (citizen_id, email) VALUES
-(1, 'rahul.sharma@example.com'),   (2, 'priya.singh@example.com'),
-(3, 'anil.kumar@example.com'),     (4, 'sunita.patel@example.com'),
-(5, 'rakesh.gupta@example.com'),   (6, 'kavita.rao@example.com'),
-(7, 'vikram.desai@example.com'),   (8, 'meera.nair@example.com'),
-(9, 'suresh.menon@example.com'),   (10,'aisha.khan@example.com'),
-(11,'rohit.verma@example.com'),    (12,'neha.joshi@example.com'),
-(13,'deepak.yadav@example.com'),   (14,'pooja.mehta@example.com'),
-(15,'amitabh.das@example.com'),    (16,'sneha.chawla@example.com'),
-(17,'manoj.tiwari@example.com'),   (18,'kavya.reddy@example.com'),
-(19,'arjun.patel@example.com'),    (20,'ananya.kapoor@example.com');
-
-INSERT INTO courts (court_id, court_name, location, court_type) VALUES
-(1, 'Supreme Court of India', 'New Delhi',    'Supreme Court'),
-(2, 'Delhi High Court',        'New Delhi',    'High Court'),
-(3, 'Bombay High Court',       'Mumbai',       'High Court'),
-(4, 'Karnataka High Court',    'Bengaluru',    'High Court'),
-(5, 'Mumbai District Court',   'Mumbai',       'District Court'),
-(6, 'Delhi District Court',    'New Delhi',    'District Court');
-
--- ======================================
--- 3) JUDGES
--- ======================================
-INSERT INTO judge (judicial_service_id, appointment_date, position, court_id, citizen_id) VALUES
-(2001, '2015-06-01', 'Supreme Court Judge', 1, 1),
-(2002, '2016-09-15', 'High Court Judge',    2, 2),
-(2003, '2017-03-10', 'High Court Judge',    3, 3),
-(2004, '2018-11-20', 'High Court Judge',    4, 4),
-(2005, '2019-05-25', 'District Court Judge',5, 5),
-(2006, '2020-01-30', 'District Court Judge',6, 6);
-
--- ======================================
--- 4) LAW FIRMS & LAWYERS
--- ======================================
--- Law firms
-INSERT INTO law_firm (firm_id, firm_name) VALUES
-(1, 'Lex & Co.'),
-(2, 'Justice Advocates');
-
--- Law firm contacts
-INSERT INTO law_firm_contacts (firm_id, contact_number, address) VALUES
-(1, '022-23456789', '12 Legal Lane, Fort, Mumbai, Maharashtra'),
-(2, '011-22334455', '34 Justice Street, New Delhi, Delhi');
-
--- Lawyers
-INSERT INTO lawyer (licence_number, registration_date, specification, firm_id, citizen_id) VALUES
-(3001, '2010-04-12', 'Criminal Law',             1, 7),
-(3002, '2012-07-23', 'Civil Law',                1, 8),
-(3003, '2015-09-05', 'Corporate Law',            2, 9),
-(3004, '2018-01-17', 'Family Law',               2, 10),
-(3005, '2020-06-30', 'Intellectual Property',    1, 11);
-
--- ======================================
--- 5) FIRs & FIR PARTIES
--- ======================================
-INSERT INTO FIRs (fir_id, location, district, state, incident_date, crime_description) VALUES
-(4001, 'Andheri',         'Mumbai',    'Maharashtra', '2024-12-01', 'Burglary at residential apartment'),
-(4002, 'Connaught Place', 'New Delhi', 'Delhi',       '2025-01-15', 'Assault and grievous hurt'),
-(4003, 'Koramangala',     'Bengaluru', 'Karnataka',   '2025-02-20', 'Cheque bounce under Negotiable Instruments Act');
-
-INSERT INTO FIRparties (fir_id, citizen_id, role) VALUES
-(4001, 12, 'Complainant'),
-(4001, 13, 'Accused'),
-(4002, 14, 'Complainant'),
-(4002, 15, 'Accused'),
-(4003, 16, 'Complainant'),
-(4003, 17, 'Accused');
-
--- ======================================
--- 6) CASES & VERDICTS
--- ======================================
-INSERT INTO cases (case_id, filing_date, case_status, case_type, court_id) VALUES
-(5001, '2023-01-05', 'Ongoing', 'Criminal', 5),
-(5002, '2022-02-01', 'Pending',     'Civil',     6),
-(5003, '2021-03-01', 'Closed',      'Criminal',  2);
-
--- Verdict for the closed case
-INSERT INTO verdicts (case_id, decision, decision_date, is_guilty) VALUES
-(5003, 'Accused found guilty and sentenced to 2 years imprisonment', '2025-04-10', TRUE);
-
-INSERT INTO cases (case_id, filing_date, case_status, case_type, court_id) VALUES
-(5004, '2025-03-15', 'Ongoing', 'Criminal', 3),
-(5005, '2025-03-18', 'Pending',     'Civil',    6),
-(5006, '2025-03-20', 'Closed',      'Criminal', 2),
-(5007, '2025-04-01', 'Ongoing', 'Family',   4),
-(5008, '2025-04-05', 'Closed',     'Civil',    5);
-
--- One closed case verdict
-INSERT INTO verdicts (case_id, decision, decision_date, is_guilty) VALUES
-(5006, 'Accused acquitted due to lack of evidence', '2025-04-12', FALSE),
-(5008, 'Accused found guilty and sentenced to 3 years in prison', '2025-06-12', TRUE);
-
-
-
--- ======================================
--- 7) EVIDENCE & SUBMISSIONS
--- ======================================
-INSERT INTO evidence (evidence_id, location, evidence_type) VALUES
-(6001, 'Scene of crime, Andheri',       'Fingerprint'),
-(6002, 'Police Station, New Delhi',     'Document'),
-(6003, 'Scene of crime, Koramangala',   'Photograph');
-
-INSERT INTO evidence_submission (evidence_id, citizen_id, submission_date) VALUES
-(6001, 12, '2025-01-02 10:30:00'),
-(6002, 14, '2025-02-05 14:45:00'),
-(6003, 16, '2025-02-22 09:15:00');
-
-INSERT INTO evidence_of (evidence_id, case_id, description) VALUES
-(6001, 5001, 'Latent fingerprints matched with accused'),
-(6002, 5002, 'Signed agreement under dispute'),
-(6003, 5003, 'Photo of cheque and signature');
-
--- ======================================
--- 8) HEARINGS & TESTIMONIES
--- ======================================
-INSERT INTO hearings (case_id, hearing_index, date_time,           location,              next_hearing,           judicial_service_number) VALUES
-(5001, 1,             '2025-03-10 11:00:00', 'Mumbai District Court','2025-04-15 11:00:00', 2005),
-(5002, 1,             '2025-03-20 10:00:00', 'Delhi District Court', '2025-05-01 10:00:00', 2006),
-(5003, 1,             '2025-03-15 09:30:00', 'Delhi High Court',     NULL,                   2002);
-
-INSERT INTO testifies (case_id, hearing_index, witeness_type,     content,                                                               citizen_id) VALUES
-(5001, 1,             'Eyewitness',    'Saw the accused break the lock and enter the house.',                  18),
-(5002, 1,             'Expert Witness','Examined the documents and confirmed authenticity.',                  19),
-(5003, 1,             'Victim',        'Received the bounced cheque from the accused.',                       20);
-
-
--- Hearings for new cases
-INSERT INTO hearings VALUES
-(5004, 1, '2025-04-01 10:00:00', 'Bombay High Court',     '2025-05-01 10:00:00', 2003),
-(5004, 2, '2025-05-01 10:00:00', 'Bombay High Court',     '2025-06-01 10:00:00', 2003),
-
-(5005, 1, '2025-04-02 11:00:00', 'Delhi District Court',  '2025-05-02 11:00:00', 2006),
-(5005, 2, '2025-05-02 11:00:00', 'Delhi District Court',  NULL,                  2006),
-
-(5006, 1, '2025-03-25 09:00:00', 'Delhi High Court',      NULL,                  2002),
-
-(5007, 1, '2025-04-10 14:00:00', 'Karnataka High Court',  '2025-04-20 14:00:00', 2004),
-(5007, 2, '2025-04-20 14:00:00', 'Karnataka High Court',  '2025-05-10 14:00:00', 2004),
-(5007, 3, '2025-05-10 14:00:00', 'Karnataka High Court',  NULL,                  2004),
-
-(5008, 1, '2025-04-08 12:00:00', 'Mumbai District Court', '2025-05-08 12:00:00', 2005),
-(5008, 2, '2025-05-08 12:00:00', 'Mumbai District Court', NULL,                  2005);
-
--- Additional hearings for previous cases
-INSERT INTO hearings VALUES
-(5001, 2, '2025-04-15 11:00:00', 'Mumbai District Court', NULL, 2005),
-(5002, 2, '2025-05-01 10:00:00', 'Delhi District Court', NULL, 2006),
-(5003, 2, '2025-04-01 09:30:00', 'Delhi High Court', NULL, 2002),
-
--- Dummy follow-up hearings to fill up to 20
-(5001, 3, '2025-05-10 10:00:00', 'Mumbai District Court', NULL, 2005),
-(5004, 3, '2025-06-01 10:00:00', 'Bombay High Court', NULL, 2003),
-(5007, 4, '2025-06-01 14:00:00', 'Karnataka High Court', NULL, 2004),
-(5005, 3, '2025-06-01 11:00:00', 'Delhi District Court', NULL, 2006),
-(5008, 3, '2025-06-01 12:00:00', 'Mumbai District Court', NULL, 2005);
-
-
-
--- ======================================
--- 9) CASE PARTIES & ATTORNEYS
--- ======================================
-INSERT INTO case_party (case_id, citizen_id, role) VALUES
-(5001, 12, 'Plaintiff'),
-(5001, 13, 'Defendant'),
-(5002, 14, 'Plaintiff'),
-(5002, 15, 'Defendant'),
-(5003, 16, 'Plaintiff'),
-(5003, 17, 'Defendant');
-
-INSERT INTO case_attorneys (case_id, licence_number, role) VALUES
-(5001, 3001, 'Prosecutor'),
-(5001, 3002, 'Defense'),
-(5002, 3003, 'Prosecutor'),
-(5002, 3004, 'Defense'),
-(5003, 3001, 'Prosecutor'),
-(5003, 3005, 'Defense');
-
-
-
+INSERT INTO citizens VALUES (1, 'Citizen_1', '1980-01-2', 'Female', 'dummy', 'New Delhi', 'Maharashtra');
+INSERT INTO citizen_contact VALUES (1, '9740112260');
+INSERT INTO citizens VALUES (2, 'Citizen_2', '1980-01-3', 'Male', 'dummy', 'New Delhi', 'Karnataka');
+INSERT INTO citizen_contact VALUES (2, '9520385547');
+INSERT INTO citizens VALUES (3, 'Citizen_3', '1980-01-4', 'Male', 'dummy', 'Bengaluru', 'Maharashtra');
+INSERT INTO citizen_contact VALUES (3, '9881877387');
+INSERT INTO citizens VALUES (4, 'Citizen_4', '1980-01-5', 'Other', 'dummy', 'New Delhi', 'Delhi');
+INSERT INTO citizen_contact VALUES (4, '9149786423');
+INSERT INTO citizens VALUES (5, 'Citizen_5', '1980-01-6', 'Female', 'dummy', 'Pune', 'Karnataka');
+INSERT INTO citizen_contact VALUES (5, '9790479020');
+INSERT INTO citizens VALUES (6, 'Citizen_6', '1980-01-7', 'Male', 'dummy', 'Bengaluru', 'Tamil Nadu');
+INSERT INTO citizen_contact VALUES (6, '9724033850');
+INSERT INTO citizens VALUES (7, 'Citizen_7', '1980-01-8', 'Other', 'dummy', 'Lucknow', 'Tamil Nadu');
+INSERT INTO citizen_contact VALUES (7, '9306411974');
+INSERT INTO citizens VALUES (8, 'Citizen_8', '1980-01-9', 'Other', 'dummy', 'Chennai', 'Delhi');
+INSERT INTO citizen_contact VALUES (8, '9701887412');
+INSERT INTO citizens VALUES (9, 'Citizen_9', '1980-01-10', 'Other', 'dummy', 'Lucknow', 'Delhi');
+INSERT INTO citizen_contact VALUES (9, '9240360142');
+INSERT INTO citizens VALUES (10, 'Citizen_10', '1980-01-11', 'Female', 'dummy', 'New Delhi', 'Uttar Pradesh');
+INSERT INTO citizen_contact VALUES (10, '9759687247');
+INSERT INTO citizens VALUES (11, 'Citizen_11', '1980-01-12', 'Other', 'dummy', 'Chennai', 'Karnataka');
+INSERT INTO citizen_contact VALUES (11, '9191277916');
+INSERT INTO citizens VALUES (12, 'Citizen_12', '1980-01-13', 'Other', 'dummy', 'Pune', 'Tamil Nadu');
+INSERT INTO citizen_contact VALUES (12, '9538965559');
+INSERT INTO citizens VALUES (13, 'Citizen_13', '1980-01-14', 'Female', 'dummy', 'New Delhi', 'Uttar Pradesh');
+INSERT INTO citizen_contact VALUES (13, '9931851661');
+INSERT INTO citizens VALUES (14, 'Citizen_14', '1980-01-15', 'Female', 'dummy', 'Lucknow', 'Uttar Pradesh');
+INSERT INTO citizen_contact VALUES (14, '9396847914');
+INSERT INTO citizens VALUES (15, 'Citizen_15', '1980-01-16', 'Male', 'dummy', 'New Delhi', 'Tamil Nadu');
+INSERT INTO citizen_contact VALUES (15, '9682503399');
+INSERT INTO citizens VALUES (16, 'Citizen_16', '1980-01-17', 'Male', 'dummy', 'Pune', 'Tamil Nadu');
+INSERT INTO citizen_contact VALUES (16, '9931116813');
+INSERT INTO citizens VALUES (17, 'Citizen_17', '1980-01-18', 'Other', 'dummy', 'Chennai', 'Tamil Nadu');
+INSERT INTO citizen_contact VALUES (17, '9866679788');
+INSERT INTO citizens VALUES (18, 'Citizen_18', '1980-01-19', 'Male', 'dummy', 'New Delhi', 'Karnataka');
+INSERT INTO citizen_contact VALUES (18, '9541438094');
+INSERT INTO citizens VALUES (19, 'Citizen_19', '1980-01-20', 'Other', 'dummy', 'Chennai', 'Delhi');
+INSERT INTO citizen_contact VALUES (19, '9227744000');
+INSERT INTO citizens VALUES (20, 'Citizen_20', '1980-01-21', 'Female', 'dummy', 'Pune', 'Karnataka');
+INSERT INTO citizen_contact VALUES (20, '9367733812');
+INSERT INTO citizens VALUES (21, 'Citizen_21', '1980-01-22', 'Female', 'dummy', 'Chennai', 'Uttar Pradesh');
+INSERT INTO citizen_contact VALUES (21, '9396188320');
+INSERT INTO citizens VALUES (22, 'Citizen_22', '1980-01-23', 'Female', 'dummy', 'Lucknow', 'Uttar Pradesh');
+INSERT INTO citizen_contact VALUES (22, '9405725438');
+INSERT INTO citizens VALUES (23, 'Citizen_23', '1980-01-24', 'Other', 'dummy', 'Lucknow', 'Delhi');
+INSERT INTO citizen_contact VALUES (23, '9418689965');
+INSERT INTO citizens VALUES (24, 'Citizen_24', '1980-01-25', 'Male', 'dummy', 'Bengaluru', 'Uttar Pradesh');
+INSERT INTO citizen_contact VALUES (24, '9543114721');
+INSERT INTO citizens VALUES (25, 'Citizen_25', '1980-01-26', 'Female', 'dummy', 'New Delhi', 'Uttar Pradesh');
+INSERT INTO citizen_contact VALUES (25, '9508304336');
+INSERT INTO citizens VALUES (26, 'Citizen_26', '1980-01-27', 'Other', 'dummy', 'Bengaluru', 'Delhi');
+INSERT INTO citizen_contact VALUES (26, '9887303264');
+INSERT INTO citizens VALUES (27, 'Citizen_27', '1980-01-28', 'Female', 'dummy', 'Chennai', 'Maharashtra');
+INSERT INTO citizen_contact VALUES (27, '9972233771');
+INSERT INTO citizens VALUES (28, 'Citizen_28', '1980-01-1', 'Female', 'dummy', 'Lucknow', 'Delhi');
+INSERT INTO citizen_contact VALUES (28, '9364004659');
+INSERT INTO citizens VALUES (29, 'Citizen_29', '1980-01-2', 'Other', 'dummy', 'Lucknow', 'Maharashtra');
+INSERT INTO citizen_contact VALUES (29, '9296939181');
+INSERT INTO citizens VALUES (30, 'Citizen_30', '1980-01-3', 'Other', 'dummy', 'Lucknow', 'Tamil Nadu');
+INSERT INTO citizen_contact VALUES (30, '9921708952');
+INSERT INTO courts VALUES (1, 'Court_1', 'District Court', 'dummy', 'Lucknow', 'Tamil Nadu');
+INSERT INTO courts VALUES (2, 'Court_2', 'Supreme Court', 'dummy', 'Bengaluru', 'Tamil Nadu');
+INSERT INTO courts VALUES (3, 'Court_3', 'District Court', 'dummy', 'New Delhi', 'Tamil Nadu');
+INSERT INTO courts VALUES (4, 'Court_4', 'High Court', 'dummy', 'Bengaluru', 'Tamil Nadu');
+INSERT INTO courts VALUES (5, 'Court_5', 'Supreme Court', 'dummy', 'Chennai', 'Tamil Nadu');
+INSERT INTO judges VALUES (1, 'Judge_1', '2000-06-2', 2);
+INSERT INTO judges VALUES (2, 'Judge_2', '2000-06-3', 5);
+INSERT INTO judges VALUES (3, 'Judge_3', '2000-06-4', 4);
+INSERT INTO judges VALUES (4, 'Judge_4', '2000-06-5', 3);
+INSERT INTO judges VALUES (5, 'Judge_5', '2000-06-6', 2);
+INSERT INTO judges VALUES (6, 'Judge_6', '2000-06-7', 5);
+INSERT INTO judges VALUES (7, 'Judge_7', '2000-06-8', 5);
+INSERT INTO judges VALUES (8, 'Judge_8', '2000-06-9', 2);
+INSERT INTO judges VALUES (9, 'Judge_9', '2000-06-10', 3);
+INSERT INTO judges VALUES (10, 'Judge_10', '2000-06-11', 3);
+INSERT INTO lawyers VALUES (1, 'Lawyer_1', 'BAR0001', 25, '9833746381', 'dummy');
+INSERT INTO lawyers VALUES (2, 'Lawyer_2', 'BAR0002', 1, '9456992179', 'dummy');
+INSERT INTO lawyers VALUES (3, 'Lawyer_3', 'BAR0003', 26, '9267382932', 'dummy');
+INSERT INTO lawyers VALUES (4, 'Lawyer_4', 'BAR0004', 15, '9246378108', 'dummy');
+INSERT INTO lawyers VALUES (5, 'Lawyer_5', 'BAR0005', 14, '9758687452', 'dummy');
+INSERT INTO lawyers VALUES (6, 'Lawyer_6', 'BAR0006', 4, '9746990817', 'dummy');
+INSERT INTO lawyers VALUES (7, 'Lawyer_7', 'BAR0007', 2, '9492559620', 'dummy');
+INSERT INTO lawyers VALUES (8, 'Lawyer_8', 'BAR0008', 10, '9319315149', 'dummy');
+INSERT INTO lawyers VALUES (9, 'Lawyer_9', 'BAR0009', 13, '9523511099', 'dummy');
+INSERT INTO lawyers VALUES (10, 'Lawyer_10', 'BAR0010', 4, '9537674279', 'dummy');
+INSERT INTO lawyers VALUES (11, 'Lawyer_11', 'BAR0011', 4, '9797785574', 'dummy');
+INSERT INTO lawyers VALUES (12, 'Lawyer_12', 'BAR0012', 21, '9127853735', 'dummy');
+INSERT INTO lawyers VALUES (13, 'Lawyer_13', 'BAR0013', 29, '9275155532', 'dummy');
+INSERT INTO lawyers VALUES (14, 'Lawyer_14', 'BAR0014', 6, '9914409840', 'dummy');
+INSERT INTO lawyers VALUES (15, 'Lawyer_15', 'BAR0015', 7, '9472492311', 'dummy');
+INSERT INTO cases VALUES (1, 'Case_1', 'dummy', 'Criminal', '2020-01-2', 'Closed', 5);
+INSERT INTO cases VALUES (2, 'Case_2', 'dummy', 'Civil', '2020-01-3', 'Closed', 1);
+INSERT INTO cases VALUES (3, 'Case_3', 'dummy', 'Civil', '2020-01-4', 'Ongoing', 4);
+INSERT INTO cases VALUES (4, 'Case_4', 'dummy', 'Criminal', '2020-01-5', 'Closed', 5);
+INSERT INTO cases VALUES (5, 'Case_5', 'dummy', 'Civil', '2020-01-6', 'Ongoing', 5);
+INSERT INTO cases VALUES (6, 'Case_6', 'dummy', 'Criminal', '2020-01-7', 'Ongoing', 4);
+INSERT INTO cases VALUES (7, 'Case_7', 'dummy', 'Criminal', '2020-01-8', 'Closed', 5);
+INSERT INTO cases VALUES (8, 'Case_8', 'dummy', 'Criminal', '2020-01-9', 'Ongoing', 2);
+INSERT INTO cases VALUES (9, 'Case_9', 'dummy', 'Criminal', '2020-01-10', 'Ongoing', 1);
+INSERT INTO cases VALUES (10, 'Case_10', 'dummy', 'Criminal', '2020-01-11', 'Closed', 1);
+INSERT INTO cases VALUES (11, 'Case_11', 'dummy', 'Civil', '2020-01-12', 'Closed', 2);
+INSERT INTO cases VALUES (12, 'Case_12', 'dummy', 'Criminal', '2020-01-13', 'Closed', 3);
+INSERT INTO cases VALUES (13, 'Case_13', 'dummy', 'Criminal', '2020-01-14', 'Ongoing', 3);
+INSERT INTO cases VALUES (14, 'Case_14', 'dummy', 'Civil', '2020-01-15', 'Closed', 3);
+INSERT INTO cases VALUES (15, 'Case_15', 'dummy', 'Criminal', '2020-01-16', 'Ongoing', 2);
+INSERT INTO cases VALUES (16, 'Case_16', 'dummy', 'Criminal', '2020-01-17', 'Closed', 2);
+INSERT INTO cases VALUES (17, 'Case_17', 'dummy', 'Civil', '2020-01-18', 'Closed', 1);
+INSERT INTO cases VALUES (18, 'Case_18', 'dummy', 'Criminal', '2020-01-19', 'Closed', 2);
+INSERT INTO cases VALUES (19, 'Case_19', 'dummy', 'Civil', '2020-01-20', 'Ongoing', 5);
+INSERT INTO cases VALUES (20, 'Case_20', 'dummy', 'Criminal', '2020-01-21', 'Closed', 5);
+INSERT INTO case_participants VALUES (1, 17, 'Accused');
+INSERT INTO case_participants VALUES (1, 25, 'Witness');
+INSERT INTO case_participants VALUES (1, 13, 'Witness');
+INSERT INTO case_participants VALUES (2, 15, 'Accused');
+INSERT INTO case_participants VALUES (2, 2, 'Witness');
+INSERT INTO case_participants VALUES (2, 27, 'Witness');
+INSERT INTO case_participants VALUES (3, 26, 'Complainant');
+INSERT INTO case_participants VALUES (3, 6, 'Witness');
+INSERT INTO case_participants VALUES (3, 4, 'Accused');
+INSERT INTO case_participants VALUES (4, 29, 'Accused');
+INSERT INTO case_participants VALUES (4, 15, 'Complainant');
+INSERT INTO case_participants VALUES (4, 14, 'Accused');
+INSERT INTO case_participants VALUES (5, 24, 'Witness');
+INSERT INTO case_participants VALUES (5, 10, 'Accused');
+INSERT INTO case_participants VALUES (5, 9, 'Witness');
+INSERT INTO case_participants VALUES (6, 4, 'Complainant');
+INSERT INTO case_participants VALUES (6, 14, 'Accused');
+INSERT INTO case_participants VALUES (6, 18, 'Complainant');
+INSERT INTO case_participants VALUES (7, 17, 'Complainant');
+INSERT INTO case_participants VALUES (7, 28, 'Witness');
+INSERT INTO case_participants VALUES (7, 18, 'Witness');
+INSERT INTO case_participants VALUES (8, 25, 'Complainant');
+INSERT INTO case_participants VALUES (8, 27, 'Witness');
+INSERT INTO case_participants VALUES (8, 26, 'Accused');
+INSERT INTO case_participants VALUES (9, 12, 'Complainant');
+INSERT INTO case_participants VALUES (9, 25, 'Accused');
+INSERT INTO case_participants VALUES (9, 12, 'Witness');
+INSERT INTO case_participants VALUES (10, 28, 'Accused');
+INSERT INTO case_participants VALUES (10, 24, 'Accused');
+INSERT INTO case_participants VALUES (10, 9, 'Accused');
+INSERT INTO case_participants VALUES (11, 14, 'Complainant');
+INSERT INTO case_participants VALUES (11, 1, 'Complainant');
+INSERT INTO case_participants VALUES (12, 19, 'Witness');
+INSERT INTO case_participants VALUES (12, 13, 'Witness');
+INSERT INTO case_participants VALUES (12, 14, 'Accused');
+INSERT INTO case_participants VALUES (13, 6, 'Accused');
+INSERT INTO case_participants VALUES (13, 25, 'Complainant');
+INSERT INTO case_participants VALUES (13, 21, 'Witness');
+INSERT INTO case_participants VALUES (14, 5, 'Accused');
+INSERT INTO case_participants VALUES (14, 18, 'Accused');
+INSERT INTO case_participants VALUES (14, 7, 'Complainant');
+INSERT INTO case_participants VALUES (15, 17, 'Witness');
+INSERT INTO case_participants VALUES (15, 3, 'Complainant');
+INSERT INTO case_participants VALUES (15, 11, 'Witness');
+INSERT INTO case_participants VALUES (16, 19, 'Complainant');
+INSERT INTO case_participants VALUES (16, 25, 'Complainant');
+INSERT INTO case_participants VALUES (16, 22, 'Witness');
+INSERT INTO case_participants VALUES (17, 28, 'Accused');
+INSERT INTO case_participants VALUES (17, 25, 'Accused');
+INSERT INTO case_participants VALUES (17, 3, 'Accused');
+INSERT INTO case_participants VALUES (18, 21, 'Accused');
+INSERT INTO case_participants VALUES (18, 18, 'Accused');
+INSERT INTO case_participants VALUES (18, 20, 'Accused');
+INSERT INTO case_participants VALUES (19, 2, 'Complainant');
+INSERT INTO case_participants VALUES (19, 4, 'Witness');
+INSERT INTO case_participants VALUES (19, 28, 'Accused');
+INSERT INTO case_participants VALUES (20, 29, 'Complainant');
+INSERT INTO case_participants VALUES (20, 14, 'Complainant');
+INSERT INTO case_participants VALUES (20, 26, 'Witness');
+INSERT INTO case_lawyers VALUES (1, 8, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (1, 6, 'Defendant');
+INSERT INTO case_lawyers VALUES (2, 5, 'Defendant');
+INSERT INTO case_lawyers VALUES (2, 7, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (3, 9, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (3, 3, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (4, 9, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (4, 13, 'Defendant');
+INSERT INTO case_lawyers VALUES (5, 13, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (5, 8, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (6, 4, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (6, 7, 'Defendant');
+INSERT INTO case_lawyers VALUES (7, 7, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (7, 5, 'Defendant');
+INSERT INTO case_lawyers VALUES (8, 5, 'Defendant');
+INSERT INTO case_lawyers VALUES (8, 14, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (9, 11, 'Defendant');
+INSERT INTO case_lawyers VALUES (9, 8, 'Defendant');
+INSERT INTO case_lawyers VALUES (10, 5, 'Defendant');
+INSERT INTO case_lawyers VALUES (10, 8, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (11, 3, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (11, 11, 'Defendant');
+INSERT INTO case_lawyers VALUES (12, 13, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (12, 1, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (13, 12, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (13, 15, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (14, 9, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (14, 3, 'Defendant');
+INSERT INTO case_lawyers VALUES (15, 6, 'Defendant');
+INSERT INTO case_lawyers VALUES (15, 1, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (16, 1, 'Defendant');
+INSERT INTO case_lawyers VALUES (16, 12, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (17, 9, 'Defendant');
+INSERT INTO case_lawyers VALUES (17, 10, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (18, 5, 'Defendant');
+INSERT INTO case_lawyers VALUES (18, 3, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (19, 8, 'Defendant');
+INSERT INTO case_lawyers VALUES (19, 6, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (20, 1, 'Prosecutor');
+INSERT INTO case_lawyers VALUES (20, 5, 'Defendant');
+INSERT INTO case_judges VALUES (1, 5);
+INSERT INTO case_judges VALUES (2, 9);
+INSERT INTO case_judges VALUES (3, 6);
+INSERT INTO case_judges VALUES (4, 3);
+INSERT INTO case_judges VALUES (5, 10);
+INSERT INTO case_judges VALUES (6, 9);
+INSERT INTO case_judges VALUES (7, 5);
+INSERT INTO case_judges VALUES (8, 1);
+INSERT INTO case_judges VALUES (9, 6);
+INSERT INTO case_judges VALUES (10, 2);
+INSERT INTO case_judges VALUES (11, 5);
+INSERT INTO case_judges VALUES (12, 5);
+INSERT INTO case_judges VALUES (13, 8);
+INSERT INTO case_judges VALUES (14, 8);
+INSERT INTO case_judges VALUES (15, 4);
+INSERT INTO case_judges VALUES (16, 8);
+INSERT INTO case_judges VALUES (17, 10);
+INSERT INTO case_judges VALUES (18, 1);
+INSERT INTO case_judges VALUES (19, 6);
+INSERT INTO case_judges VALUES (20, 7);
+INSERT INTO hearings VALUES (1, 1, '2021-03-23', 7, 'dummy');
+INSERT INTO hearings VALUES (2, 2, '2022-08-24', 8, 'dummy');
+INSERT INTO hearings VALUES (3, 2, '2022-01-30', 1, 'dummy');
+INSERT INTO hearings VALUES (4, 3, '2021-03-13', 6, 'dummy');
+INSERT INTO hearings VALUES (5, 3, '2021-10-21', 7, 'dummy');
+INSERT INTO hearings VALUES (6, 4, '2023-07-28', 1, 'dummy');
+INSERT INTO hearings VALUES (7, 5, '2021-07-12', 1, 'dummy');
+INSERT INTO hearings VALUES (8, 5, '2022-03-25', 5, 'dummy');
+INSERT INTO hearings VALUES (9, 5, '2023-07-06', 8, 'dummy');
+INSERT INTO hearings VALUES (10, 6, '2022-01-24', 8, 'dummy');
+INSERT INTO hearings VALUES (11, 7, '2022-05-01', 1, 'dummy');
+INSERT INTO hearings VALUES (12, 7, '2021-03-02', 4, 'dummy');
+INSERT INTO hearings VALUES (13, 8, '2022-12-22', 2, 'dummy');
+INSERT INTO hearings VALUES (14, 9, '2023-05-17', 10, 'dummy');
+INSERT INTO hearings VALUES (15, 9, '2021-06-18', 7, 'dummy');
+INSERT INTO hearings VALUES (16, 9, '2021-02-09', 3, 'dummy');
+INSERT INTO hearings VALUES (17, 10, '2021-01-31', 2, 'dummy');
+INSERT INTO hearings VALUES (18, 11, '2023-12-13', 9, 'dummy');
+INSERT INTO hearings VALUES (19, 12, '2023-01-25', 7, 'dummy');
+INSERT INTO hearings VALUES (20, 12, '2022-06-27', 10, 'dummy');
+INSERT INTO hearings VALUES (21, 13, '2023-04-24', 4, 'dummy');
+INSERT INTO hearings VALUES (22, 13, '2021-03-09', 3, 'dummy');
+INSERT INTO hearings VALUES (23, 13, '2022-11-05', 6, 'dummy');
+INSERT INTO hearings VALUES (24, 14, '2021-08-28', 1, 'dummy');
+INSERT INTO hearings VALUES (25, 15, '2022-02-02', 5, 'dummy');
+INSERT INTO hearings VALUES (26, 16, '2023-06-28', 5, 'dummy');
+INSERT INTO hearings VALUES (27, 16, '2023-12-30', 6, 'dummy');
+INSERT INTO hearings VALUES (28, 17, '2023-01-17', 9, 'dummy');
+INSERT INTO hearings VALUES (29, 17, '2022-01-27', 2, 'dummy');
+INSERT INTO hearings VALUES (30, 18, '2021-02-16', 9, 'dummy');
+INSERT INTO hearings VALUES (31, 18, '2021-10-30', 5, 'dummy');
+INSERT INTO hearings VALUES (32, 18, '2021-12-18', 8, 'dummy');
+INSERT INTO hearings VALUES (33, 19, '2023-01-03', 6, 'dummy');
+INSERT INTO hearings VALUES (34, 19, '2023-12-20', 1, 'dummy');
+INSERT INTO hearings VALUES (35, 19, '2022-08-20', 4, 'dummy');
+INSERT INTO hearings VALUES (36, 20, '2023-03-02', 2, 'dummy');
+INSERT INTO evidence VALUES (1, 14, 'dummy', 10, '2023-03-16', 'Document');
+INSERT INTO evidence VALUES (2, 5, 'dummy', 11, '2023-06-26', 'Document');
+INSERT INTO evidence VALUES (3, 8, 'dummy', 5, '2023-03-12', 'Document');
+INSERT INTO evidence VALUES (4, 10, 'dummy', 15, '2023-03-23', 'Document');
+INSERT INTO evidence VALUES (5, 5, 'dummy', 4, '2022-02-18', 'Document');
+INSERT INTO evidence VALUES (6, 8, 'dummy', 13, '2021-01-09', 'Document');
+INSERT INTO evidence VALUES (7, 3, 'dummy', 2, '2022-10-07', 'Document');
+INSERT INTO evidence VALUES (8, 18, 'dummy', 1, '2023-11-20', 'Document');
+INSERT INTO evidence VALUES (9, 9, 'dummy', 13, '2021-06-25', 'Document');
+INSERT INTO evidence VALUES (10, 12, 'dummy', 3, '2023-08-14', 'Document');
+INSERT INTO evidence VALUES (11, 5, 'dummy', 7, '2022-06-23', 'Document');
+INSERT INTO evidence VALUES (12, 1, 'dummy', 6, '2021-09-24', 'Document');
+INSERT INTO evidence VALUES (13, 12, 'dummy', 8, '2021-11-28', 'Document');
+INSERT INTO evidence VALUES (14, 16, 'dummy', 8, '2021-07-01', 'Document');
+INSERT INTO evidence VALUES (15, 19, 'dummy', 10, '2023-07-26', 'Document');
+INSERT INTO evidence VALUES (16, 13, 'dummy', 11, '2021-06-13', 'Document');
+INSERT INTO evidence VALUES (17, 17, 'dummy', 7, '2022-03-20', 'Document');
+INSERT INTO evidence VALUES (18, 14, 'dummy', 1, '2021-01-23', 'Document');
+INSERT INTO evidence VALUES (19, 2, 'dummy', 15, '2021-07-04', 'Document');
+INSERT INTO evidence VALUES (20, 14, 'dummy', 4, '2023-01-03', 'Document');
+INSERT INTO evidence VALUES (21, 3, 'dummy', 15, '2022-07-11', 'Document');
+INSERT INTO evidence VALUES (22, 2, 'dummy', 8, '2022-12-03', 'Document');
+INSERT INTO evidence VALUES (23, 19, 'dummy', 11, '2021-08-10', 'Document');
+INSERT INTO evidence VALUES (24, 20, 'dummy', 8, '2021-12-09', 'Document');
+INSERT INTO evidence VALUES (25, 2, 'dummy', 5, '2022-08-13', 'Document');
+INSERT INTO evidence VALUES (26, 16, 'dummy', 6, '2021-08-15', 'Document');
+INSERT INTO evidence VALUES (27, 15, 'dummy', 9, '2021-03-24', 'Document');
+INSERT INTO evidence VALUES (28, 5, 'dummy', 11, '2023-09-06', 'Document');
+INSERT INTO evidence VALUES (29, 2, 'dummy', 6, '2023-03-26', 'Document');
+INSERT INTO evidence VALUES (30, 1, 'dummy', 10, '2021-12-08', 'Document');
+INSERT INTO evidence VALUES (31, 19, 'dummy', 7, '2023-06-07', 'Document');
+INSERT INTO evidence VALUES (32, 18, 'dummy', 10, '2021-11-22', 'Document');
+INSERT INTO evidence VALUES (33, 16, 'dummy', 14, '2021-05-12', 'Document');
+INSERT INTO evidence VALUES (34, 10, 'dummy', 10, '2021-04-07', 'Document');
+INSERT INTO evidence VALUES (35, 13, 'dummy', 3, '2021-08-04', 'Document');
+INSERT INTO evidence VALUES (36, 19, 'dummy', 2, '2022-05-31', 'Document');
+INSERT INTO evidence VALUES (37, 12, 'dummy', 2, '2023-08-06', 'Document');
+INSERT INTO evidence VALUES (38, 4, 'dummy', 10, '2021-05-18', 'Document');
+INSERT INTO evidence VALUES (39, 10, 'dummy', 15, '2022-06-28', 'Document');
+INSERT INTO evidence VALUES (40, 19, 'dummy', 5, '2022-10-27', 'Document');
+INSERT INTO verdicts VALUES (1, 1, '2023-06-23', 'dummy', 'dummy', 'dummy', TRUE);
+INSERT INTO verdicts VALUES (2, 2, '2023-05-23', 'dummy', 'dummy', 'dummy', FALSE);
+INSERT INTO verdicts VALUES (3, 3, '2024-09-10', 'dummy', 'dummy', 'dummy', FALSE);
+INSERT INTO verdicts VALUES (4, 4, '2023-03-29', 'dummy', 'dummy', 'dummy', TRUE);
+INSERT INTO verdicts VALUES (5, 5, '2024-03-10', 'dummy', 'dummy', 'dummy', FALSE);
+INSERT INTO verdicts VALUES (6, 6, '2024-10-04', 'dummy', 'dummy', 'dummy', FALSE);
+INSERT INTO verdicts VALUES (7, 7, '2024-10-19', 'dummy', 'dummy', 'dummy', FALSE);
+INSERT INTO verdicts VALUES (8, 8, '2023-03-18', 'dummy', 'dummy', 'dummy', TRUE);
+INSERT INTO verdicts VALUES (9, 9, '2024-06-15', 'dummy', 'dummy', 'dummy', FALSE);
+INSERT INTO verdicts VALUES (10, 10, '2024-02-01', 'dummy', 'dummy', 'dummy', TRUE);

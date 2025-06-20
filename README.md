@@ -1,6 +1,3 @@
-# Save the README content to a markdown (.md) file
-
-readme_content = """
 # 🏛️ Judicial Database Management System
 
 A comprehensive relational database system designed to model, store, and query detailed information about judicial processes in India. This project encapsulates entities such as citizens, courts, judges, lawyers, cases, hearings, and verdicts to simulate real-world judicial workflows with optimized and insightful SQL queries.

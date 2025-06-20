@@ -3,15 +3,15 @@
 -- 1. List all citizens
 SELECT * FROM citizens;
 
--- 2. Get contact numbers of a particular citizen (e.g., citizen_id = 101)
+-- 2. Get contact numbers of a particular citizen (say citizen_id = 6)
 SELECT contact_number 
 FROM citizen_contact 
-WHERE citizen_id = 101;
+WHERE citizen_id = 6;
 
--- 3. List all courts in a specific state (e.g., 'Maharashtra')
+-- 3. List all courts in a specific state (say Tamil Nadu)
 SELECT * 
 FROM courts 
-WHERE state ILIKE 'Maharashtra';  -- ILIKE is case-insensitive in PostgreSQL
+WHERE state ILIKE 'Tamil Nadu'; 
 
 -- 4. Find all judges working in a specific court (e.g., court_id = 2)
 SELECT * 
@@ -33,32 +33,32 @@ SELECT court_id, COUNT(*) AS total_cases
 FROM cases 
 GROUP BY court_id;
 
--- 8. Show all participants in a specific case (e.g., case_id = 2001)
+-- 8. Show all participants in a specific case (e.g., case_id = 5)
 SELECT c.name AS citizen_name, cp.role 
 FROM case_participants cp
 JOIN citizens c ON cp.citizen_id = c.citizen_id
-WHERE cp.case_id = 2001;
+WHERE cp.case_id = 5;
 
--- 9. List all hearings scheduled on a specific date
+-- 9. List all hearings scheduled on a specific date(say 2021-06-18)
 SELECT * 
 FROM hearings 
-WHERE hearing_date = DATE '2025-06-20';
+WHERE hearing_date = DATE '2021-06-18';
 
 -- 10. Get the details of all evidence submitted in a specific case
 SELECT * 
 FROM evidence 
 WHERE case_id = 2001;
 
--- 11. List all cases handled by a particular lawyer (e.g., lawyer_id = 303)
+-- 11. List all cases handled by a particular lawyer (say lawyer_id = 10)
 SELECT c.case_id, c.title, cl.role
 FROM case_lawyers cl
 JOIN cases c ON cl.case_id = c.case_id
-WHERE cl.lawyer_id = 303;
+WHERE cl.lawyer_id = 10;
 
--- 12. Get the verdict of a specific case (e.g., case_id = 2001)
+-- 12. Get the verdict of a specific case (say case_id = 2)
 SELECT * 
 FROM verdicts 
-WHERE case_id = 2001;
+WHERE case_id = 2;
 
 -- 13. Find all judges who have presided over hearings
 SELECT DISTINCT j.judge_id, j.judge_name

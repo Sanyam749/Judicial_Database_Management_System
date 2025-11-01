@@ -1,4 +1,4 @@
--- DDL Script
+-- DDL Script for Judicial Database Management System
 
 -- CITIZENS    
 CREATE TABLE citizens (

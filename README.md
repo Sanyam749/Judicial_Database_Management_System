@@ -1,21 +1,21 @@
-# 🏛️ Judicial Database Management System
+# Judicial Database Management System
 
 A comprehensive relational database system designed to model, store, and query detailed information about judicial processes in India. This project encapsulates entities such as citizens, courts, judges, lawyers, cases, hearings, and verdicts to simulate real-world judicial workflows with optimized and insightful SQL queries.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
-- **📁 `relational_schema.pdf`**: ER diagram / relational schema visualizing table relationships.
-- **📄 `ddl_script.sql`**: DDL script defining the schema for all core entities and relationships.
-- **📥 `sample_inserts.sql`**: Sample data for all tables to simulate real-world records.
-- **🧾 `basic_queries.sql`**: Common SQL queries to retrieve and manage day-to-day records.
-- **📊 `advanced_queries.sql`**: Analytical SQL queries for insights into judicial operations.
+- **`relational_schema.pdf`**: ER diagram / relational schema visualizing table relationships.
+- **`ddl_script.sql`**: DDL script defining the schema for all core entities and relationships.
+- **`sample_inserts.sql`**: Sample data for all tables to simulate real-world records.
+- **`basic_queries.sql`**: Common SQL queries to retrieve and manage day-to-day records.
+- **`advanced_queries.sql`**: Analytical SQL queries for insights into judicial operations.
 
 
 ---
 
-## 🧱 Database Schema
+## Database Schema
 
 The project includes the following main tables:
 
@@ -34,7 +34,7 @@ The project includes the following main tables:
 
 ---
 
-## ✅ Basic SQL Queries
+## Basic SQL Queries
 
 Includes operations such as:
 
@@ -48,7 +48,7 @@ Includes operations such as:
 
 ---
 
-## 📊 Advanced SQL Analytics
+## Advanced SQL Analytics
 
 This project provides analytical insights:
 
@@ -75,7 +75,7 @@ This project provides analytical insights:
 
 ---
 
-## 🧪 Technologies Used
+## Technologies Used
 
 - **SQL (PostgreSQL dialect)**: Schema and queries.
 - **ER Modeling**: Entity and relationship design.
@@ -83,7 +83,7 @@ This project provides analytical insights:
 
 ---
 
-## 💡 Learning Outcomes
+## Learning Outcomes
 
 - Practical experience in designing normalized relational databases.
 - Writing real-world SQL queries with advanced logic.

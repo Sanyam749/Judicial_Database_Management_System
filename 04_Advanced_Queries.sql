@@ -28,10 +28,11 @@ LIMIT 5;
 SELECT 
     j.judge_id,
     j.judge_name,
-    COUNT(cj.case_id) AS cases_handled,
-    COUNT(h.hearing_id) AS total_hearings,
+    COUNT(DISTINCT cj.case_id) AS cases_handled,
+    COUNT(DISTINCT h.hearing_id) AS total_hearings,
     ROUND(
-        COUNT(h.hearing_id) * 1.0 / NULLIF(COUNT(cj.case_id), 0),
+        COUNT(DISTINCT h.hearing_id) * 1.0 / 
+        NULLIF(COUNT(DISTINCT cj.case_id), 0),
         2
     ) AS avg_hearings_per_case
 FROM judges j
